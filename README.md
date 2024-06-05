@@ -102,11 +102,10 @@ Rezervasyon sınıfı. Rezervasyon bilgilerini tutar.
 		public Location ArrivalLocation { get; set; }
 		public DateTime Date { get; set; }
 		public TimeSpan Time { get; set; }
-		public string SelectedSeat { get; set; } // Seçilen koltuk
-		public string CustomerName { get; set; }
-		public string CustomerSurname { get; set; }
-		public string CustomerPhone { get; set; }
-		public string CustomerEmail { get; set; }
+		public string Seat { get; set; } // Seçilen koltuk
+		public string Name { get; set; }
+		public string Surname { get; set; }
+		
 	}
 ```
 
