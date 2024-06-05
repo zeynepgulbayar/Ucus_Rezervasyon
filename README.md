@@ -105,6 +105,7 @@ Rezervasyon sınıfı. Rezervasyon bilgilerini tutar.
 		public string Seat { get; set; }
 		public string Name { get; set; }
 		public string Surname { get; set; }
+		public int Age { get; set; }
 		
 	}
 ```
