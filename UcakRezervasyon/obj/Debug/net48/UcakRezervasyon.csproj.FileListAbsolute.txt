@@ -1,0 +1,13 @@
+C:\Users\Enes\source\repos\UcakRezervasyon\UcakRezervasyon\obj\Debug\net48\UcakRezervasyon.csproj.AssemblyReference.cache
+C:\Users\Enes\source\repos\UcakRezervasyon\UcakRezervasyon\obj\Debug\net48\UcakRezervasyon.csproj.SuggestedBindingRedirects.cache
+C:\Users\Enes\source\repos\UcakRezervasyon\UcakRezervasyon\obj\Debug\net48\UcakRezervasyon.exe.config
+C:\Users\Enes\source\repos\UcakRezervasyon\UcakRezervasyon\obj\Debug\net48\UcakRezervasyon.AircraftForm.resources
+C:\Users\Enes\source\repos\UcakRezervasyon\UcakRezervasyon\obj\Debug\net48\UcakRezervasyon.LocationForm.resources
+C:\Users\Enes\source\repos\UcakRezervasyon\UcakRezervasyon\obj\Debug\net48\UcakRezervasyon.MainForm.resources
+C:\Users\Enes\source\repos\UcakRezervasyon\UcakRezervasyon\obj\Debug\net48\UcakRezervasyon.Properties.Resources.resources
+C:\Users\Enes\source\repos\UcakRezervasyon\UcakRezervasyon\obj\Debug\net48\UcakRezervasyon.ReservationForm.resources
+C:\Users\Enes\source\repos\UcakRezervasyon\UcakRezervasyon\obj\Debug\net48\UcakRezervasyon.csproj.GenerateResource.cache
+C:\Users\Enes\source\repos\UcakRezervasyon\UcakRezervasyon\obj\Debug\net48\UcakRezervasyon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Enes\source\repos\UcakRezervasyon\UcakRezervasyon\obj\Debug\net48\UcakRezervasyon.AssemblyInfoInputs.cache
+C:\Users\Enes\source\repos\UcakRezervasyon\UcakRezervasyon\obj\Debug\net48\UcakRezervasyon.AssemblyInfo.cs
+C:\Users\Enes\source\repos\UcakRezervasyon\UcakRezervasyon\obj\Debug\net48\UcakRezervasyon.csproj.CoreCompileInputs.cache
