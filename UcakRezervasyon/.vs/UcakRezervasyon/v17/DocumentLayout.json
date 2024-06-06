@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Enes\\Desktop\\New folder (2)\\UcakRezervasyon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{65A6AF29-BAA9-421C-9720-59C0467FBC9F}|UcakRezervasyon.csproj|c:\\users\\enes\\desktop\\new folder (2)\\ucakrezervasyon\\aircraftform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{65A6AF29-BAA9-421C-9720-59C0467FBC9F}|UcakRezervasyon.csproj|solutionrelative:aircraftform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AircraftForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Enes\\Desktop\\New folder (2)\\UcakRezervasyon\\AircraftForm.cs",
+              "RelativeDocumentMoniker": "AircraftForm.cs",
+              "ToolTip": "C:\\Users\\Enes\\Desktop\\New folder (2)\\UcakRezervasyon\\AircraftForm.cs [Design]",
+              "RelativeToolTip": "AircraftForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T01:41:23.055Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

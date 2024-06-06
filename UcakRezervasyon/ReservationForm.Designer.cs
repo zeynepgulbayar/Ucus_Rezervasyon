@@ -15,245 +15,289 @@
 
 		private void InitializeComponent()
 		{
-			this.dataGridViewSeats = new System.Windows.Forms.DataGridView();
-			this.dataGridViewReservations = new System.Windows.Forms.DataGridView();
-			this.comboBoxAircrafts = new System.Windows.Forms.ComboBox();
-			this.comboBoxDeparture = new System.Windows.Forms.ComboBox();
-			this.comboBoxArrival = new System.Windows.Forms.ComboBox();
-			this.dateTimePickerDate = new System.Windows.Forms.DateTimePicker();
-			this.dateTimePickerTime = new System.Windows.Forms.DateTimePicker();
-			this.txtCustomerName = new System.Windows.Forms.TextBox();
-			this.txtCustomerSurname = new System.Windows.Forms.TextBox();
-			this.txtCustomerPhone = new System.Windows.Forms.TextBox();
-			this.txtCustomerEmail = new System.Windows.Forms.TextBox();
-			this.btnAddReservation = new System.Windows.Forms.Button();
-			this.lblAircraft = new System.Windows.Forms.Label();
-			this.lblDeparture = new System.Windows.Forms.Label();
-			this.lblArrival = new System.Windows.Forms.Label();
-			this.lblDate = new System.Windows.Forms.Label();
-			this.lblTime = new System.Windows.Forms.Label();
-			this.lblCustomerName = new System.Windows.Forms.Label();
-			this.lblCustomerSurname = new System.Windows.Forms.Label();
-			this.lblCustomerPhone = new System.Windows.Forms.Label();
-			this.lblCustomerEmail = new System.Windows.Forms.Label();
-			this.panelSeats = new System.Windows.Forms.Panel();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridViewSeats)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridViewReservations)).BeginInit();
-			this.SuspendLayout();
+			dataGridViewSeats = new DataGridView();
+			dataGridViewReservations = new DataGridView();
+			comboBoxAircrafts = new ComboBox();
+			comboBoxDeparture = new ComboBox();
+			comboBoxArrival = new ComboBox();
+			dateTimePickerDate = new DateTimePicker();
+			dateTimePickerTime = new DateTimePicker();
+			txtCustomerName = new TextBox();
+			txtCustomerSurname = new TextBox();
+			txtCustomerPhone = new TextBox();
+			txtCustomerEmail = new TextBox();
+			btnAddReservation = new Button();
+			lblAircraft = new Label();
+			lblDeparture = new Label();
+			lblArrival = new Label();
+			lblDate = new Label();
+			lblTime = new Label();
+			lblCustomerName = new Label();
+			lblCustomerSurname = new Label();
+			lblCustomerPhone = new Label();
+			lblCustomerEmail = new Label();
+			panelSeats = new Panel();
+			comboBoxGender = new ComboBox();
+			lblGender = new Label();
+			txtCustomerAge = new TextBox();
+			lblCustomerAge = new Label();
+			((System.ComponentModel.ISupportInitialize)dataGridViewSeats).BeginInit();
+			((System.ComponentModel.ISupportInitialize)dataGridViewReservations).BeginInit();
+			SuspendLayout();
 			// 
 			// dataGridViewSeats
 			// 
-			this.dataGridViewSeats.Location = new System.Drawing.Point(27, 33);
-			this.dataGridViewSeats.Name = "dataGridViewSeats";
-			this.dataGridViewSeats.Size = new System.Drawing.Size(545, 258);
-			this.dataGridViewSeats.TabIndex = 0;
-			this.dataGridViewSeats.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSeats_CellContentClick);
+			dataGridViewSeats.Location = new Point(27, 33);
+			dataGridViewSeats.Name = "dataGridViewSeats";
+			dataGridViewSeats.Size = new Size(545, 258);
+			dataGridViewSeats.TabIndex = 0;
+			dataGridViewSeats.CellContentClick += dataGridViewSeats_CellContentClick;
 			// 
 			// dataGridViewReservations
 			// 
-			this.dataGridViewReservations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridViewReservations.Location = new System.Drawing.Point(620, 12);
-			this.dataGridViewReservations.Name = "dataGridViewReservations";
-			this.dataGridViewReservations.Size = new System.Drawing.Size(300, 262);
-			this.dataGridViewReservations.TabIndex = 0;
+			dataGridViewReservations.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			dataGridViewReservations.Location = new Point(12, 52);
+			dataGridViewReservations.Name = "dataGridViewReservations";
+			dataGridViewReservations.Size = new Size(489, 262);
+			dataGridViewReservations.TabIndex = 0;
 			// 
 			// comboBoxAircrafts
 			// 
-			this.comboBoxAircrafts.FormattingEnabled = true;
-			this.comboBoxAircrafts.Location = new System.Drawing.Point(100, 320);
-			this.comboBoxAircrafts.Name = "comboBoxAircrafts";
-			this.comboBoxAircrafts.Size = new System.Drawing.Size(200, 21);
-			this.comboBoxAircrafts.TabIndex = 1;
-			this.comboBoxAircrafts.SelectedIndexChanged += new System.EventHandler(this.comboBoxAircrafts_SelectedIndexChanged);
+			comboBoxAircrafts.FormattingEnabled = true;
+			comboBoxAircrafts.Location = new Point(713, 52);
+			comboBoxAircrafts.Name = "comboBoxAircrafts";
+			comboBoxAircrafts.Size = new Size(200, 23);
+			comboBoxAircrafts.TabIndex = 1;
+			comboBoxAircrafts.SelectedIndexChanged += comboBoxAircrafts_SelectedIndexChanged;
 			// 
 			// comboBoxDeparture
 			// 
-			this.comboBoxDeparture.FormattingEnabled = true;
-			this.comboBoxDeparture.Location = new System.Drawing.Point(100, 360);
-			this.comboBoxDeparture.Name = "comboBoxDeparture";
-			this.comboBoxDeparture.Size = new System.Drawing.Size(200, 21);
-			this.comboBoxDeparture.TabIndex = 2;
+			comboBoxDeparture.FormattingEnabled = true;
+			comboBoxDeparture.Location = new Point(713, 92);
+			comboBoxDeparture.Name = "comboBoxDeparture";
+			comboBoxDeparture.Size = new Size(200, 23);
+			comboBoxDeparture.TabIndex = 2;
+			comboBoxDeparture.SelectedIndexChanged += comboBoxDeparture_SelectedIndexChanged;
 			// 
 			// comboBoxArrival
 			// 
-			this.comboBoxArrival.FormattingEnabled = true;
-			this.comboBoxArrival.Location = new System.Drawing.Point(100, 400);
-			this.comboBoxArrival.Name = "comboBoxArrival";
-			this.comboBoxArrival.Size = new System.Drawing.Size(200, 21);
-			this.comboBoxArrival.TabIndex = 3;
+			comboBoxArrival.FormattingEnabled = true;
+			comboBoxArrival.Location = new Point(713, 132);
+			comboBoxArrival.Name = "comboBoxArrival";
+			comboBoxArrival.Size = new Size(200, 23);
+			comboBoxArrival.TabIndex = 3;
+			comboBoxArrival.SelectedIndexChanged += comboBoxArrival_SelectedIndexChanged;
 			// 
 			// dateTimePickerDate
 			// 
-			this.dateTimePickerDate.Location = new System.Drawing.Point(100, 440);
-			this.dateTimePickerDate.Name = "dateTimePickerDate";
-			this.dateTimePickerDate.Size = new System.Drawing.Size(200, 20);
-			this.dateTimePickerDate.TabIndex = 4;
+			dateTimePickerDate.Location = new Point(713, 172);
+			dateTimePickerDate.Name = "dateTimePickerDate";
+			dateTimePickerDate.Size = new Size(200, 23);
+			dateTimePickerDate.TabIndex = 4;
 			// 
 			// dateTimePickerTime
 			// 
-			this.dateTimePickerTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-			this.dateTimePickerTime.Location = new System.Drawing.Point(100, 480);
-			this.dateTimePickerTime.Name = "dateTimePickerTime";
-			this.dateTimePickerTime.Size = new System.Drawing.Size(200, 20);
-			this.dateTimePickerTime.TabIndex = 5;
+			dateTimePickerTime.Format = DateTimePickerFormat.Time;
+			dateTimePickerTime.Location = new Point(713, 212);
+			dateTimePickerTime.Name = "dateTimePickerTime";
+			dateTimePickerTime.Size = new Size(200, 23);
+			dateTimePickerTime.TabIndex = 5;
 			// 
 			// txtCustomerName
 			// 
-			this.txtCustomerName.Location = new System.Drawing.Point(400, 320);
-			this.txtCustomerName.Name = "txtCustomerName";
-			this.txtCustomerName.Size = new System.Drawing.Size(200, 20);
-			this.txtCustomerName.TabIndex = 6;
+			txtCustomerName.Location = new Point(1013, 52);
+			txtCustomerName.Name = "txtCustomerName";
+			txtCustomerName.Size = new Size(200, 23);
+			txtCustomerName.TabIndex = 6;
 			// 
 			// txtCustomerSurname
 			// 
-			this.txtCustomerSurname.Location = new System.Drawing.Point(400, 360);
-			this.txtCustomerSurname.Name = "txtCustomerSurname";
-			this.txtCustomerSurname.Size = new System.Drawing.Size(200, 20);
-			this.txtCustomerSurname.TabIndex = 7;
+			txtCustomerSurname.Location = new Point(1013, 92);
+			txtCustomerSurname.Name = "txtCustomerSurname";
+			txtCustomerSurname.Size = new Size(200, 23);
+			txtCustomerSurname.TabIndex = 7;
 			// 
 			// txtCustomerPhone
 			// 
-			this.txtCustomerPhone.Location = new System.Drawing.Point(400, 400);
-			this.txtCustomerPhone.Name = "txtCustomerPhone";
-			this.txtCustomerPhone.Size = new System.Drawing.Size(200, 20);
-			this.txtCustomerPhone.TabIndex = 8;
+			txtCustomerPhone.Location = new Point(1013, 132);
+			txtCustomerPhone.Name = "txtCustomerPhone";
+			txtCustomerPhone.Size = new Size(200, 23);
+			txtCustomerPhone.TabIndex = 8;
 			// 
 			// txtCustomerEmail
 			// 
-			this.txtCustomerEmail.Location = new System.Drawing.Point(400, 440);
-			this.txtCustomerEmail.Name = "txtCustomerEmail";
-			this.txtCustomerEmail.Size = new System.Drawing.Size(200, 20);
-			this.txtCustomerEmail.TabIndex = 9;
+			txtCustomerEmail.Location = new Point(1013, 172);
+			txtCustomerEmail.Name = "txtCustomerEmail";
+			txtCustomerEmail.Size = new Size(200, 23);
+			txtCustomerEmail.TabIndex = 9;
 			// 
 			// btnAddReservation
 			// 
-			this.btnAddReservation.Location = new System.Drawing.Point(620, 320);
-			this.btnAddReservation.Name = "btnAddReservation";
-			this.btnAddReservation.Size = new System.Drawing.Size(100, 140);
-			this.btnAddReservation.TabIndex = 10;
-			this.btnAddReservation.Text = "Add Reservation";
-			this.btnAddReservation.UseVisualStyleBackColor = true;
-			this.btnAddReservation.Click += new System.EventHandler(this.btnAddReservation_Click);
+			btnAddReservation.Location = new Point(1252, 252);
+			btnAddReservation.Name = "btnAddReservation";
+			btnAddReservation.Size = new Size(118, 63);
+			btnAddReservation.TabIndex = 10;
+			btnAddReservation.Text = "Rezervasyon Yap";
+			btnAddReservation.UseVisualStyleBackColor = true;
+			btnAddReservation.Click += btnAddReservation_Click;
 			// 
 			// lblAircraft
 			// 
-			this.lblAircraft.AutoSize = true;
-			this.lblAircraft.Location = new System.Drawing.Point(20, 320);
-			this.lblAircraft.Name = "lblAircraft";
-			this.lblAircraft.Size = new System.Drawing.Size(40, 13);
-			this.lblAircraft.TabIndex = 11;
-			this.lblAircraft.Text = "Aircraft";
+			lblAircraft.AutoSize = true;
+			lblAircraft.Location = new Point(633, 52);
+			lblAircraft.Name = "lblAircraft";
+			lblAircraft.Size = new Size(33, 15);
+			lblAircraft.TabIndex = 11;
+			lblAircraft.Text = "Ucak";
 			// 
 			// lblDeparture
 			// 
-			this.lblDeparture.AutoSize = true;
-			this.lblDeparture.Location = new System.Drawing.Point(20, 360);
-			this.lblDeparture.Name = "lblDeparture";
-			this.lblDeparture.Size = new System.Drawing.Size(54, 13);
-			this.lblDeparture.TabIndex = 12;
-			this.lblDeparture.Text = "Departure";
+			lblDeparture.AutoSize = true;
+			lblDeparture.Location = new Point(633, 92);
+			lblDeparture.Name = "lblDeparture";
+			lblDeparture.Size = new Size(37, 15);
+			lblDeparture.TabIndex = 12;
+			lblDeparture.Text = "Kalkış";
 			// 
 			// lblArrival
 			// 
-			this.lblArrival.AutoSize = true;
-			this.lblArrival.Location = new System.Drawing.Point(20, 400);
-			this.lblArrival.Name = "lblArrival";
-			this.lblArrival.Size = new System.Drawing.Size(36, 13);
-			this.lblArrival.TabIndex = 13;
-			this.lblArrival.Text = "Arrival";
+			lblArrival.AutoSize = true;
+			lblArrival.Location = new Point(633, 132);
+			lblArrival.Name = "lblArrival";
+			lblArrival.Size = new Size(31, 15);
+			lblArrival.TabIndex = 13;
+			lblArrival.Text = "Varış";
 			// 
 			// lblDate
 			// 
-			this.lblDate.AutoSize = true;
-			this.lblDate.Location = new System.Drawing.Point(20, 440);
-			this.lblDate.Name = "lblDate";
-			this.lblDate.Size = new System.Drawing.Size(30, 13);
-			this.lblDate.TabIndex = 14;
-			this.lblDate.Text = "Date";
+			lblDate.AutoSize = true;
+			lblDate.Location = new Point(633, 172);
+			lblDate.Name = "lblDate";
+			lblDate.Size = new Size(32, 15);
+			lblDate.TabIndex = 14;
+			lblDate.Text = "Tarih";
 			// 
 			// lblTime
 			// 
-			this.lblTime.AutoSize = true;
-			this.lblTime.Location = new System.Drawing.Point(20, 480);
-			this.lblTime.Name = "lblTime";
-			this.lblTime.Size = new System.Drawing.Size(30, 13);
-			this.lblTime.TabIndex = 15;
-			this.lblTime.Text = "Time";
+			lblTime.AutoSize = true;
+			lblTime.Location = new Point(633, 212);
+			lblTime.Name = "lblTime";
+			lblTime.Size = new Size(29, 15);
+			lblTime.TabIndex = 15;
+			lblTime.Text = "Saat";
 			// 
 			// lblCustomerName
 			// 
-			this.lblCustomerName.AutoSize = true;
-			this.lblCustomerName.Location = new System.Drawing.Point(320, 320);
-			this.lblCustomerName.Name = "lblCustomerName";
-			this.lblCustomerName.Size = new System.Drawing.Size(35, 13);
-			this.lblCustomerName.TabIndex = 16;
-			this.lblCustomerName.Text = "Name";
+			lblCustomerName.AutoSize = true;
+			lblCustomerName.Location = new Point(933, 52);
+			lblCustomerName.Name = "lblCustomerName";
+			lblCustomerName.Size = new Size(22, 15);
+			lblCustomerName.TabIndex = 16;
+			lblCustomerName.Text = "Ad";
 			// 
 			// lblCustomerSurname
 			// 
-			this.lblCustomerSurname.AutoSize = true;
-			this.lblCustomerSurname.Location = new System.Drawing.Point(320, 360);
-			this.lblCustomerSurname.Name = "lblCustomerSurname";
-			this.lblCustomerSurname.Size = new System.Drawing.Size(49, 13);
-			this.lblCustomerSurname.TabIndex = 17;
-			this.lblCustomerSurname.Text = "Surname";
+			lblCustomerSurname.AutoSize = true;
+			lblCustomerSurname.Location = new Point(933, 92);
+			lblCustomerSurname.Name = "lblCustomerSurname";
+			lblCustomerSurname.Size = new Size(39, 15);
+			lblCustomerSurname.TabIndex = 17;
+			lblCustomerSurname.Text = "Soyad";
 			// 
 			// lblCustomerPhone
 			// 
-			this.lblCustomerPhone.AutoSize = true;
-			this.lblCustomerPhone.Location = new System.Drawing.Point(320, 400);
-			this.lblCustomerPhone.Name = "lblCustomerPhone";
-			this.lblCustomerPhone.Size = new System.Drawing.Size(38, 13);
-			this.lblCustomerPhone.TabIndex = 18;
-			this.lblCustomerPhone.Text = "Phone";
+			lblCustomerPhone.AutoSize = true;
+			lblCustomerPhone.Location = new Point(933, 132);
+			lblCustomerPhone.Name = "lblCustomerPhone";
+			lblCustomerPhone.Size = new Size(45, 15);
+			lblCustomerPhone.TabIndex = 18;
+			lblCustomerPhone.Text = "Telefon";
 			// 
 			// lblCustomerEmail
 			// 
-			this.lblCustomerEmail.AutoSize = true;
-			this.lblCustomerEmail.Location = new System.Drawing.Point(320, 440);
-			this.lblCustomerEmail.Name = "lblCustomerEmail";
-			this.lblCustomerEmail.Size = new System.Drawing.Size(32, 13);
-			this.lblCustomerEmail.TabIndex = 19;
-			this.lblCustomerEmail.Text = "Email";
+			lblCustomerEmail.AutoSize = true;
+			lblCustomerEmail.Location = new Point(933, 172);
+			lblCustomerEmail.Name = "lblCustomerEmail";
+			lblCustomerEmail.Size = new Size(36, 15);
+			lblCustomerEmail.TabIndex = 19;
+			lblCustomerEmail.Text = "Email";
 			// 
 			// panelSeats
 			// 
-			this.panelSeats.Location = new System.Drawing.Point(27, 33);
-			this.panelSeats.Name = "panelSeats";
-			this.panelSeats.Size = new System.Drawing.Size(545, 258);
-			this.panelSeats.TabIndex = 0;
+			panelSeats.Location = new Point(22, 331);
+			panelSeats.Name = "panelSeats";
+			panelSeats.Size = new Size(1191, 258);
+			panelSeats.TabIndex = 0;
+			panelSeats.Paint += panelSeats_Paint;
+			// 
+			// comboBoxGender
+			// 
+			comboBoxGender.FormattingEnabled = true;
+			comboBoxGender.Items.AddRange(new object[] { "Male", "Female", "Other" });
+			comboBoxGender.Location = new Point(1013, 212);
+			comboBoxGender.Name = "comboBoxGender";
+			comboBoxGender.Size = new Size(200, 23);
+			comboBoxGender.TabIndex = 21;
+			// 
+			// lblGender
+			// 
+			lblGender.AutoSize = true;
+			lblGender.Location = new Point(933, 212);
+			lblGender.Name = "lblGender";
+			lblGender.Size = new Size(49, 15);
+			lblGender.TabIndex = 20;
+			lblGender.Text = "Cinsiyet";
+			// 
+			// txtCustomerAge
+			// 
+			txtCustomerAge.Location = new Point(1013, 252);
+			txtCustomerAge.Name = "txtCustomerAge";
+			txtCustomerAge.Size = new Size(200, 23);
+			txtCustomerAge.TabIndex = 23;
+			// 
+			// lblCustomerAge
+			// 
+			lblCustomerAge.AutoSize = true;
+			lblCustomerAge.Location = new Point(933, 252);
+			lblCustomerAge.Name = "lblCustomerAge";
+			lblCustomerAge.Size = new Size(24, 15);
+			lblCustomerAge.TabIndex = 22;
+			lblCustomerAge.Text = "Yaş";
 			// 
 			// ReservationForm
 			// 
-			this.ClientSize = new System.Drawing.Size(979, 592);
-			this.Controls.Add(this.panelSeats);
-			this.Controls.Add(this.lblCustomerEmail);
-			this.Controls.Add(this.lblCustomerPhone);
-			this.Controls.Add(this.lblCustomerSurname);
-			this.Controls.Add(this.lblCustomerName);
-			this.Controls.Add(this.lblTime);
-			this.Controls.Add(this.lblDate);
-			this.Controls.Add(this.lblArrival);
-			this.Controls.Add(this.lblDeparture);
-			this.Controls.Add(this.lblAircraft);
-			this.Controls.Add(this.btnAddReservation);
-			this.Controls.Add(this.txtCustomerEmail);
-			this.Controls.Add(this.txtCustomerPhone);
-			this.Controls.Add(this.txtCustomerSurname);
-			this.Controls.Add(this.txtCustomerName);
-			this.Controls.Add(this.dateTimePickerTime);
-			this.Controls.Add(this.dateTimePickerDate);
-			this.Controls.Add(this.comboBoxArrival);
-			this.Controls.Add(this.comboBoxDeparture);
-			this.Controls.Add(this.comboBoxAircrafts);
-			this.Controls.Add(this.dataGridViewReservations);
-			this.Name = "ReservationForm";
-			this.Text = "Reservation Form";
-			((System.ComponentModel.ISupportInitialize)(this.dataGridViewSeats)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridViewReservations)).EndInit();
-			this.ResumeLayout(false);
-			this.PerformLayout();
-
+			ClientSize = new Size(1564, 592);
+			Controls.Add(panelSeats);
+			Controls.Add(lblCustomerEmail);
+			Controls.Add(lblCustomerPhone);
+			Controls.Add(lblCustomerSurname);
+			Controls.Add(lblCustomerName);
+			Controls.Add(lblTime);
+			Controls.Add(lblDate);
+			Controls.Add(lblArrival);
+			Controls.Add(lblDeparture);
+			Controls.Add(lblAircraft);
+			Controls.Add(btnAddReservation);
+			Controls.Add(txtCustomerEmail);
+			Controls.Add(txtCustomerPhone);
+			Controls.Add(txtCustomerSurname);
+			Controls.Add(txtCustomerName);
+			Controls.Add(dateTimePickerTime);
+			Controls.Add(dateTimePickerDate);
+			Controls.Add(comboBoxArrival);
+			Controls.Add(comboBoxDeparture);
+			Controls.Add(comboBoxAircrafts);
+			Controls.Add(dataGridViewReservations);
+			Controls.Add(lblGender);
+			Controls.Add(comboBoxGender);
+			Controls.Add(lblCustomerAge);
+			Controls.Add(txtCustomerAge);
+			Name = "ReservationForm";
+			Text = "Reservation Form";
+			((System.ComponentModel.ISupportInitialize)dataGridViewSeats).EndInit();
+			((System.ComponentModel.ISupportInitialize)dataGridViewReservations).EndInit();
+			ResumeLayout(false);
+			PerformLayout();
 		}
 
 		private System.Windows.Forms.DataGridView dataGridViewReservations;
@@ -278,6 +322,10 @@
 		private System.Windows.Forms.Label lblCustomerEmail;
 		private System.Windows.Forms.DataGridView dataGridViewSeats;
 		private System.Windows.Forms.Panel panelSeats;
+		private System.Windows.Forms.ComboBox comboBoxGender;
+		private System.Windows.Forms.Label lblGender;
+		private System.Windows.Forms.TextBox txtCustomerAge;
+		private System.Windows.Forms.Label lblCustomerAge;
 	}
 
 }

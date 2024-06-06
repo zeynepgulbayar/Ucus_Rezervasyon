@@ -1,34 +1,42 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Enes\\source\\repos\\UcakRezervasyon\\UcakRezervasyon\\UcakRezervasyon.csproj": {}
+    "C:\\Users\\Enes\\Desktop\\New folder (2)\\UcakRezervasyon\\UcakRezervasyon.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Enes\\source\\repos\\UcakRezervasyon\\UcakRezervasyon\\UcakRezervasyon.csproj": {
+    "C:\\Users\\Enes\\Desktop\\New folder (2)\\UcakRezervasyon\\UcakRezervasyon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Enes\\source\\repos\\UcakRezervasyon\\UcakRezervasyon\\UcakRezervasyon.csproj",
+        "projectUniqueName": "C:\\Users\\Enes\\Desktop\\New folder (2)\\UcakRezervasyon\\UcakRezervasyon.csproj",
         "projectName": "UcakRezervasyon",
-        "projectPath": "C:\\Users\\Enes\\source\\repos\\UcakRezervasyon\\UcakRezervasyon\\UcakRezervasyon.csproj",
+        "projectPath": "C:\\Users\\Enes\\Desktop\\New folder (2)\\UcakRezervasyon\\UcakRezervasyon.csproj",
         "packagesPath": "C:\\Users\\Enes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Enes\\source\\repos\\UcakRezervasyon\\UcakRezervasyon\\obj\\",
+        "outputPath": "C:\\Users\\Enes\\Desktop\\New folder (2)\\UcakRezervasyon\\obj\\",
         "projectStyle": "PackageReference",
-        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\Enes\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net48"
+          "net8.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net48": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
             "projectReferences": {}
           }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
         },
         "restoreAuditProperties": {
           "enableAudit": "true",
@@ -37,27 +45,48 @@
         }
       },
       "frameworks": {
-        "net48": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.22, )"
+              "version": "[8.0.6, )"
             },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
-              "target": "Package",
-              "version": "[3.1.22, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
+            "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.22, )"
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.6, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[13.0.1, )"
+              "version": "[13.0.3, )"
             }
-          }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

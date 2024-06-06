@@ -15,122 +15,121 @@
 
 		private void InitializeComponent()
 		{
-			this.dataGridViewLocations = new System.Windows.Forms.DataGridView();
-			this.txtCountry = new System.Windows.Forms.TextBox();
-			this.txtCity = new System.Windows.Forms.TextBox();
-			this.txtAirport = new System.Windows.Forms.TextBox();
-			this.chkIsActive = new System.Windows.Forms.CheckBox();
-			this.btnAddLocation = new System.Windows.Forms.Button();
-			this.lblCountry = new System.Windows.Forms.Label();
-			this.lblCity = new System.Windows.Forms.Label();
-			this.lblAirport = new System.Windows.Forms.Label();
-			this.lblIsActive = new System.Windows.Forms.Label();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridViewLocations)).BeginInit();
-			this.SuspendLayout();
+			dataGridViewLocations = new DataGridView();
+			txtCountry = new TextBox();
+			txtCity = new TextBox();
+			txtAirport = new TextBox();
+			chkIsActive = new CheckBox();
+			btnAddLocation = new Button();
+			lblCountry = new Label();
+			lblCity = new Label();
+			lblAirport = new Label();
+			lblIsActive = new Label();
+			((System.ComponentModel.ISupportInitialize)dataGridViewLocations).BeginInit();
+			SuspendLayout();
 			// 
 			// dataGridViewLocations
 			// 
-			this.dataGridViewLocations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridViewLocations.Location = new System.Drawing.Point(12, 12);
-			this.dataGridViewLocations.Name = "dataGridViewLocations";
-			this.dataGridViewLocations.Size = new System.Drawing.Size(776, 286);
-			this.dataGridViewLocations.TabIndex = 0;
+			dataGridViewLocations.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			dataGridViewLocations.Location = new Point(12, 12);
+			dataGridViewLocations.Name = "dataGridViewLocations";
+			dataGridViewLocations.Size = new Size(545, 286);
+			dataGridViewLocations.TabIndex = 0;
 			// 
 			// txtCountry
 			// 
-			this.txtCountry.Location = new System.Drawing.Point(100, 320);
-			this.txtCountry.Name = "txtCountry";
-			this.txtCountry.Size = new System.Drawing.Size(200, 20);
-			this.txtCountry.TabIndex = 1;
+			txtCountry.Location = new Point(681, 24);
+			txtCountry.Name = "txtCountry";
+			txtCountry.Size = new Size(200, 23);
+			txtCountry.TabIndex = 1;
 			// 
 			// txtCity
 			// 
-			this.txtCity.Location = new System.Drawing.Point(100, 360);
-			this.txtCity.Name = "txtCity";
-			this.txtCity.Size = new System.Drawing.Size(200, 20);
-			this.txtCity.TabIndex = 2;
+			txtCity.Location = new Point(681, 64);
+			txtCity.Name = "txtCity";
+			txtCity.Size = new Size(200, 23);
+			txtCity.TabIndex = 2;
 			// 
 			// txtAirport
 			// 
-			this.txtAirport.Location = new System.Drawing.Point(100, 400);
-			this.txtAirport.Name = "txtAirport";
-			this.txtAirport.Size = new System.Drawing.Size(200, 20);
-			this.txtAirport.TabIndex = 3;
+			txtAirport.Location = new Point(681, 104);
+			txtAirport.Name = "txtAirport";
+			txtAirport.Size = new Size(200, 23);
+			txtAirport.TabIndex = 3;
 			// 
 			// chkIsActive
 			// 
-			this.chkIsActive.AutoSize = true;
-			this.chkIsActive.Location = new System.Drawing.Point(100, 440);
-			this.chkIsActive.Name = "chkIsActive";
-			this.chkIsActive.Size = new System.Drawing.Size(64, 17);
-			this.chkIsActive.TabIndex = 4;
-			this.chkIsActive.Text = "Is Active";
-			this.chkIsActive.UseVisualStyleBackColor = true;
+			chkIsActive.AutoSize = true;
+			chkIsActive.Location = new Point(681, 145);
+			chkIsActive.Name = "chkIsActive";
+			chkIsActive.Size = new Size(15, 14);
+			chkIsActive.TabIndex = 4;
+			chkIsActive.UseVisualStyleBackColor = true;
 			// 
 			// btnAddLocation
 			// 
-			this.btnAddLocation.Location = new System.Drawing.Point(320, 320);
-			this.btnAddLocation.Name = "btnAddLocation";
-			this.btnAddLocation.Size = new System.Drawing.Size(100, 140);
-			this.btnAddLocation.TabIndex = 5;
-			this.btnAddLocation.Text = "Add Location";
-			this.btnAddLocation.UseVisualStyleBackColor = true;
-			this.btnAddLocation.Click += new System.EventHandler(this.btnAddLocation_Click);
+			btnAddLocation.Location = new Point(759, 202);
+			btnAddLocation.Name = "btnAddLocation";
+			btnAddLocation.Size = new Size(122, 54);
+			btnAddLocation.TabIndex = 5;
+			btnAddLocation.Text = "Ekle";
+			btnAddLocation.UseVisualStyleBackColor = true;
+			btnAddLocation.Click += btnAddLocation_Click;
 			// 
 			// lblCountry
 			// 
-			this.lblCountry.AutoSize = true;
-			this.lblCountry.Location = new System.Drawing.Point(20, 320);
-			this.lblCountry.Name = "lblCountry";
-			this.lblCountry.Size = new System.Drawing.Size(43, 13);
-			this.lblCountry.TabIndex = 6;
-			this.lblCountry.Text = "Country";
+			lblCountry.AutoSize = true;
+			lblCountry.Location = new Point(601, 24);
+			lblCountry.Name = "lblCountry";
+			lblCountry.Size = new Size(30, 15);
+			lblCountry.TabIndex = 6;
+			lblCountry.Text = "Ülke";
 			// 
 			// lblCity
 			// 
-			this.lblCity.AutoSize = true;
-			this.lblCity.Location = new System.Drawing.Point(20, 360);
-			this.lblCity.Name = "lblCity";
-			this.lblCity.Size = new System.Drawing.Size(24, 13);
-			this.lblCity.TabIndex = 7;
-			this.lblCity.Text = "City";
+			lblCity.AutoSize = true;
+			lblCity.Location = new Point(601, 64);
+			lblCity.Name = "lblCity";
+			lblCity.Size = new Size(33, 15);
+			lblCity.TabIndex = 7;
+			lblCity.Text = "Şehir";
 			// 
 			// lblAirport
 			// 
-			this.lblAirport.AutoSize = true;
-			this.lblAirport.Location = new System.Drawing.Point(20, 400);
-			this.lblAirport.Name = "lblAirport";
-			this.lblAirport.Size = new System.Drawing.Size(40, 13);
-			this.lblAirport.TabIndex = 8;
-			this.lblAirport.Text = "Airport";
+			lblAirport.AutoSize = true;
+			lblAirport.Location = new Point(601, 104);
+			lblAirport.Name = "lblAirport";
+			lblAirport.Size = new Size(64, 15);
+			lblAirport.TabIndex = 8;
+			lblAirport.Text = "Hava Alanı";
 			// 
 			// lblIsActive
 			// 
-			this.lblIsActive.AutoSize = true;
-			this.lblIsActive.Location = new System.Drawing.Point(20, 440);
-			this.lblIsActive.Name = "lblIsActive";
-			this.lblIsActive.Size = new System.Drawing.Size(47, 13);
-			this.lblIsActive.TabIndex = 9;
-			this.lblIsActive.Text = "Is Active";
+			lblIsActive.AutoSize = true;
+			lblIsActive.Location = new Point(601, 144);
+			lblIsActive.Name = "lblIsActive";
+			lblIsActive.Size = new Size(32, 15);
+			lblIsActive.TabIndex = 9;
+			lblIsActive.Text = "Aktif";
 			// 
 			// LocationForm
 			// 
-			this.ClientSize = new System.Drawing.Size(800, 480);
-			this.Controls.Add(this.lblIsActive);
-			this.Controls.Add(this.lblAirport);
-			this.Controls.Add(this.lblCity);
-			this.Controls.Add(this.lblCountry);
-			this.Controls.Add(this.btnAddLocation);
-			this.Controls.Add(this.chkIsActive);
-			this.Controls.Add(this.txtAirport);
-			this.Controls.Add(this.txtCity);
-			this.Controls.Add(this.txtCountry);
-			this.Controls.Add(this.dataGridViewLocations);
-			this.Name = "LocationForm";
-			this.Text = "Location Form";
-			((System.ComponentModel.ISupportInitialize)(this.dataGridViewLocations)).EndInit();
-			this.ResumeLayout(false);
-			this.PerformLayout();
+			ClientSize = new Size(949, 384);
+			Controls.Add(lblIsActive);
+			Controls.Add(lblAirport);
+			Controls.Add(lblCity);
+			Controls.Add(lblCountry);
+			Controls.Add(btnAddLocation);
+			Controls.Add(chkIsActive);
+			Controls.Add(txtAirport);
+			Controls.Add(txtCity);
+			Controls.Add(txtCountry);
+			Controls.Add(dataGridViewLocations);
+			Name = "LocationForm";
+			Text = "Location Form";
+			((System.ComponentModel.ISupportInitialize)dataGridViewLocations).EndInit();
+			ResumeLayout(false);
+			PerformLayout();
 		}
 
 		private System.Windows.Forms.DataGridView dataGridViewLocations;

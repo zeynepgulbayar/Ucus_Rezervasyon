@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Emit;
-using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
@@ -21,7 +20,10 @@ namespace UcakRezervasyon
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-			string dbPath = "reservation.db";
+			//build database
+			optionsBuilder.UseSqlite("Data Source=database.db");
+
+			string dbPath = "database.db";
 			if (!optionsBuilder.IsConfigured)
 			{
 				optionsBuilder.UseSqlite($"Data Source={dbPath}");

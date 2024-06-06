@@ -10,43 +10,45 @@ using System.Windows.Forms;
 
 namespace UcakRezervasyon
 {
-	
 
-		public partial class LocationForm : Form
+
+	public partial class LocationForm : System.Windows.Forms.Form
+	{
+		private ApplicationDbContext _context;
+
+		public LocationForm()
 		{
-			private ApplicationDbContext _context;
+			InitializeComponent();
+			_context = new ApplicationDbContext();
+			LoadLocations();
+		}
 
-			public LocationForm()
+		private void LoadLocations()
+		{
+			var locations = _context.Locations.ToList();
+			dataGridViewLocations.DataSource = locations;
+			dataGridViewLocations.Columns["Id"].Visible = false;
+			dataGridViewLocations.Columns["Country"].HeaderText = "Ülke";
+			dataGridViewLocations.Columns["City"].HeaderText = "Şehir";
+			dataGridViewLocations.Columns["Airport"].HeaderText = "Havalimanı";
+			dataGridViewLocations.Columns["IsActive"].HeaderText = "Aktif";
+		}
+
+		private void btnAddLocation_Click(object sender, EventArgs e)
+		{
+			var location = new Location
 			{
-				InitializeComponent();
-				_context = new ApplicationDbContext();
-				LoadLocations();
-			}
+				Country = txtCountry.Text,
+				City = txtCity.Text,
+				Airport = txtAirport.Text,
+				IsActive = chkIsActive.Checked
+			};
 
-			private void LoadLocations()
-			{
-				var locations = _context.Locations.ToList();
-				dataGridViewLocations.DataSource = locations;
-			}
-
-			private void btnAddLocation_Click(object sender, EventArgs e)
-			{
-				var location = new Location
-				{
-					Country = txtCountry.Text,
-					City = txtCity.Text,
-					Airport = txtAirport.Text,
-					IsActive = chkIsActive.Checked
-				};
-
-				_context.Locations.Add(location);
-				_context.SaveChanges();
-				LoadLocations();
-			}
-
-			// Diğer event handler'lar ve işlevler...
+			_context.Locations.Add(location);
+			_context.SaveChanges();
+			LoadLocations();
 		}
 
 	}
 
-
+}

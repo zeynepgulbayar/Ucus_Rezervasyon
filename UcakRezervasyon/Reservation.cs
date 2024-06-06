@@ -17,11 +17,12 @@ namespace UcakRezervasyon
 		public Location ArrivalLocation { get; set; }
 		public DateTime Date { get; set; }
 		public TimeSpan Time { get; set; }
-		public string SelectedSeat { get; set; } // Seçilen koltuk
+		public string SelectedSeat { get; set; }
 		public string CustomerName { get; set; }
 		public string CustomerSurname { get; set; }
 		public string CustomerPhone { get; set; }
 		public string CustomerEmail { get; set; }
+		public string Gender { get; set; }
+		public int CustomerAge { get; set; }
 	}
-
 }

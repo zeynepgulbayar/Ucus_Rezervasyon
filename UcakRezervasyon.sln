@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UcakRezervasyon", "UcakRezervasyon\UcakRezervasyon.csproj", "{E26CA591-F6CD-419E-952F-46A22EB1E14B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UcakRezervasyon", "FlightReservation\UcakRezervasyon.csproj", "{B38E8C6C-97C3-4835-B0EB-BF777F18CF02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E26CA591-F6CD-419E-952F-46A22EB1E14B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E26CA591-F6CD-419E-952F-46A22EB1E14B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E26CA591-F6CD-419E-952F-46A22EB1E14B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E26CA591-F6CD-419E-952F-46A22EB1E14B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B38E8C6C-97C3-4835-B0EB-BF777F18CF02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B38E8C6C-97C3-4835-B0EB-BF777F18CF02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B38E8C6C-97C3-4835-B0EB-BF777F18CF02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B38E8C6C-97C3-4835-B0EB-BF777F18CF02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {41A93DAF-FF74-4BC9-921E-158980CABADA}
+		SolutionGuid = {26AC191E-BA6B-4813-91A0-A4BE3D228412}
 	EndGlobalSection
 EndGlobal
